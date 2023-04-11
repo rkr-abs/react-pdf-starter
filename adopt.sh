@@ -14,5 +14,5 @@ resetGitDir() {
 }
 
 # Main
-mergeOverrides
+
 resetGitDir
