@@ -4,8 +4,6 @@ cd "$(dirname "$0")"
 # Tasks
 
 cleanUp(){
-	rm ./src/components/simpleButton.*
-	rm ./src/core/actions.test.js
 	rm reset.sh
 }
 
