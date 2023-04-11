@@ -4,6 +4,7 @@ cd "$(dirname "$0")"
 # Tasks
 
 cleanUp(){
+	rm ./adopt.*
 	rm reset.sh
 }
 
