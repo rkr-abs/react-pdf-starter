@@ -17,7 +17,7 @@ executeSetupScript(){
 
 initializeCommit(){
 	git add .
-	git commit -m "Initialized."
+	git commit -m "Initialized." --no-verify
 }
 
 # Main
