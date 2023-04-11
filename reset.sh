@@ -2,6 +2,9 @@ set -e
 cd "$(dirname "$0")"
 
 # Tasks
+executeAdoptScript(){
+	sh ./adopt.sh
+}
 
 cleanUp(){
 	rm ./adopt.*
@@ -22,6 +25,7 @@ initializeCommit(){
 }
 
 # Main
+executeAdoptScript
 cleanUp
 initializeGitDir
 executeSetupScript
