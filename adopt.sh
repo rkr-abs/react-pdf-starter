@@ -8,10 +8,6 @@ set -e
 cd "$(dirname "$0")"
 
 # Tasks
-mergeOverrides(){
-	cp -r ./overrides/* .
-	rm -rf overrides
-}
 
 resetGitDir() {
 	rm -rf ./.git
