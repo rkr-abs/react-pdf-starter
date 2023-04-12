@@ -1,30 +1,10 @@
 import { React } from 'react';
-import {
-	PDFViewer,
-	StyleSheet,
-	Document,
-	Page,
-	Text,
-} from '@react-pdf/renderer';
+import { Page } from '@react-pdf/renderer';
 import './App.scss';
+import PdfViewer from './components/PdfViewer';
 
-const styles = StyleSheet.create({
-	frame: {
-		width: '90vw',
-		height: '90vh',
-	},
-});
-
-const App = () =>
-	<div className="App">
-		<PDFViewer style={ styles.frame }>
-			<Document>
-				<Page size="A4">
-					<Text>Ready to Start...</Text>
-				</Page>
-			</Document>
-		</PDFViewer>
-	</div>
-;
+const App = () => <PdfViewer>
+	<Page size="A4"/>
+</PdfViewer>;
 
 export default App;
